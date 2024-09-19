@@ -2,12 +2,15 @@
 
 public class Truck : Car
 {
+    /// <summary>
+    /// грузоподъемность
+    /// </summary>
     public int LoadCapacity { get; private set; }
 
     public Truck(string brand, string model, int year, int loadCapacity)
         : base(brand, model, year)
     {
-        LoadCapacity = loadCapacity;
+        LoadCapacity = loadCapacity; 
     }
 
     public override void StartEngine()
