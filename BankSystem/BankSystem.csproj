@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Update="Models\Client.cs">
+        <DependentUpon>Person.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Models\Employee.cs">
+        <DependentUpon>Person.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>
