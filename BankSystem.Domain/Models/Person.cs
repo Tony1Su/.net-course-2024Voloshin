@@ -17,6 +17,6 @@ public abstract class Person
         LastName = lastName;
         Age = age;
         PhoneNumber = phoneNumber;
-        Address = address;  // Исправлено на Address
+        Address = address;
     }
 }

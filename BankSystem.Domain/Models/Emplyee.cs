@@ -12,7 +12,7 @@
             PartTime
         }
 
-        public Employment EmploymentType { get; set; }
+        public Employment EmploymentType { get; }
 
         // Конструктор
         public Employee(Guid personId, string firstName, string lastName, int age, string phoneNumber, string address,
