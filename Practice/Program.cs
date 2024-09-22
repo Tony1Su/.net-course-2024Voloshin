@@ -27,6 +27,8 @@ namespace Practice
             // Создание валюты
             Currency _currency = new Currency("USD", 13);
             Console.WriteLine("Валюта: " + _currency.Name + " Значение: " + _currency.Value);
+            
+            // Обновление валюты
             _currency = UpdateCurrency(_currency, "EUR", 10);
             Console.WriteLine("Валюта: " + _currency.Name + " Значение: " + _currency.Value);
         }
@@ -49,6 +51,7 @@ namespace Practice
                 $"от {employee.EmploymentDate}. Тип занятости: {contractEmploymentType}.\'";
             Console.WriteLine("Контракт обновлен:");
             Console.WriteLine(employee.Contract);
+            //ссылочный тип , достаточно присвоить щначение свойству
         }
 
         public static Currency UpdateCurrency(Currency currency, string name, int value)
@@ -56,6 +59,7 @@ namespace Practice
             currency.Name = name;
             currency.Value = value;
             return currency;
+            //хранится в стеке , надо вернуть нове значение
         }
     }
 }
