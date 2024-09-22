@@ -10,12 +10,4 @@ public struct Currency
         Name = name;
         Value = value; 
     }
-
-    // Метод, обновляющий сущность валюты
-    public static Currency UpdateCurrency(Currency currency, string name, int value)
-    {
-        currency.Name = name;
-        currency.Value = value;
-        return currency;
-    }
 }
